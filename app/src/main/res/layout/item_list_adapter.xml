@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.xuexiang.xui.widget.alpha.XUIAlphaLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/llItm"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tvUser"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/dp_5"
+        android:text="sdfasf"
+        android:textColor="@color/colorSubtitle"
+        android:textSize="@dimen/sp_10" />
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/dp_5"
+        android:text="asdfasdf"
+        android:textColor="@color/black"
+        android:textSize="@dimen/sp_14" />
+
+
+    <TextView
+        android:id="@+id/tvDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/dp_5"
+        android:text="sdfasf"
+        android:textColor="@color/colorSubtitle"
+        android:textSize="@dimen/sp_10" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_0_5"
+        android:background="@color/colorLine" />
+
+</com.xuexiang.xui.widget.alpha.XUIAlphaLinearLayout>

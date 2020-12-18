@@ -1,0 +1,84 @@
+<resources>
+    <string name="app_name">HyrcBase</string>
+    <string name="by_string_try_load">加载失败,点击重试</string>
+    <string name="by_string_loading">努力加载中…</string>
+    <string name="by_string_empty">未找到相关内容</string>
+
+
+    <!--font-->
+    <string name="iconfanhui">&#xe614;</string>
+    <string name="iconicon_search">&#xeb9c;</string>
+    <string name="iconjinru">&#xe608;</string>
+    <string name="iconshouqijiantou">&#xe66f;</string>
+    <string name="iconguanbi">&#xe611;</string>
+    <string name="iconxiaoxi">&#xe600;</string>
+    <string name="iconaddSelect">&#xe7b0;</string>
+    <string name="iconsamiSelect">&#xe7b1;</string>
+    <string name="iconkefu">&#xe637;</string>
+    <string name="icondizhi">&#xe640;</string>
+    <string name="icondingdan">&#xe65d;</string>
+    <string name="iconshezhi">&#xe68c;</string>
+    <string name="iconxinbaniconshangchuan">&#xe617;</string>
+    <string name="iconbaocun">&#xe82a;</string>
+    <string name="icondui">&#xe60d;</string>
+    <string name="iconweizhi">&#xe60f;</string>
+    <string name="iconicozhuanhuan">&#xe669;</string>
+    <string name="iconshanchu">&#xe74c;</string>
+    <string name="iconbianji">&#xe729;</string>
+    <string name="icontianjia">&#xe66a;</string>
+    <string name="iconfirst">&#xe66d;</string>
+    <string name="iconsecond">&#xe66b;</string>
+    <string name="iconthird">&#xe66c;</string>
+    <string name="iconriqi">&#xe603;</string>
+    <string name="iconshijian">&#xe629;</string>
+    <string name="icongongcheng">&#xe744;</string>
+    <string name="icontixing">&#xe633;</string>
+
+
+    <string name="iconyiwancheng">&#xe6a6;</string>
+    <string name="icondaifahuo">&#xe638;</string>
+    <string name="icondaifukuan">&#xe639;</string>
+    <string name="icondaishouhuo">&#xe63a;</string>
+    <string name="iconshezhi1">&#xe62d;</string>
+    <string name="icongeren">&#xe706;</string>
+    <string name="iconguanbi1">&#xe607;</string>
+    <string name="iconbianji1">&#xe60a;</string>
+    <string name="iconjia">&#xe627;</string>
+    <string name="iconjian">&#xe628;</string>
+    <string name="iconshipinbofangyingpian">&#xe78f;</string>
+    <string name="iconshaixuan1">&#xe696;</string>
+    <string name="iconjiaoyu">&#xe61d;</string>
+    <string name="iconjiaoyu2">&#xe61d;</string>
+
+
+    <string name="iconbao">&#xe601;</string>
+    <string name="iconxuexi">&#xe60c;</string>
+    <string name="icongeren1">&#xe74e;</string>
+    <string name="iconbianji2">&#xe602;</string>
+    <string name="iconicondangao">&#xe62b;</string>
+    <string name="iconjinggao">&#xe67a;</string>
+    <string name="iconrongyu">&#xe62a;</string>
+
+    <string name="iconcuowu">&#xe64f;</string>
+    <string name="iconzhengque">&#xe650;</string>
+    <string name="iconyunjiexi">&#xe7e9;</string>
+    <string name="iconshoucang">&#xe613;</string>
+    <string name="iconshoucang1">&#xe612;</string>
+    <string name="iconzonglan">&#xe60b;</string>
+
+
+    <string name="icongouwucheman">&#xe604;</string>
+    <string name="icongouwuchekong">&#xe605;</string>
+    <string name="iconremen">&#xe62c;</string>
+
+
+    <string name="iconmima">&#xe8b2;</string>
+    <string name="iconicon_gengxin">&#xe619;</string>
+    <string name="iconzhengcezhipei">&#xe736;</string>
+    <string name="iconyonghuxieyi">&#xe610;</string>
+    <string name="icontuichudenglu1">&#xe63d;</string>
+    <string name="icontuichudenglu">&#xe61e;</string>
+
+
+    <!--font-->
+</resources>

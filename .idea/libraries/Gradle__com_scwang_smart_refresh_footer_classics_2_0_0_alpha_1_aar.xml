@@ -1,0 +1,15 @@
+<component name="libraryTable">
+  <library name="Gradle: com.scwang.smart:refresh-footer-classics:2.0.0-alpha-1@aar">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../../AndroidStudio/gradle/gradle-5.6.4/caches/transforms-2/files-2.1/fa81e7948269168eff25fd0602531bf9/jetified-refresh-footer-classics-2.0.0-alpha-1/jars/classes.jar!/" />
+      <root url="file://$PROJECT_DIR$/../../AndroidStudio/gradle/gradle-5.6.4/caches/transforms-2/files-2.1/fa81e7948269168eff25fd0602531bf9/jetified-refresh-footer-classics-2.0.0-alpha-1/res" />
+      <root url="file://$PROJECT_DIR$/../../AndroidStudio/gradle/gradle-5.6.4/caches/transforms-2/files-2.1/fa81e7948269168eff25fd0602531bf9/jetified-refresh-footer-classics-2.0.0-alpha-1/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$PROJECT_DIR$/../../AndroidStudio/gradle/gradle-5.6.4/caches/modules-2/files-2.1/com.scwang.smart/refresh-footer-classics/2.0.0-alpha-1/d6417d6a98a06cd0bee9cbee33c7a6cf5e90e921/refresh-footer-classics-2.0.0-alpha-1-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$PROJECT_DIR$/../../AndroidStudio/gradle/gradle-5.6.4/caches/modules-2/files-2.1/com.scwang.smart/refresh-footer-classics/2.0.0-alpha-1/28d75beb939520d209cf35af5125b0e88203c6c3/refresh-footer-classics-2.0.0-alpha-1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="colorWhite">#ffffffff</color>
+    <color name="colorWhiteHalf">#bbffffff</color>
+    <color name="colorTabText">#585858</color>
+    <color name="listBgCol">#f1f0f6</color>
+    <color name="lin_bg">#DDDDDD</color>
+    <color name="f3f3f3">#F3F3F3</color>
+
+    <!--正文文字颜色-->
+    <color name="colorContent">#ff333333</color>
+    <!--分割线-->
+    <color name="colorLine">#EBEBEB</color>
+    <!--首页item文字颜色-->
+    <color name="colorSubtitle">#999</color>
+
+    <!--页面背景的颜色-->
+    <color name="color_page_bg">#fafafa</color>
+
+    <color name="transparent">#00000000</color>
+
+</resources>

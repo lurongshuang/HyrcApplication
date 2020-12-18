@@ -1,0 +1,18 @@
+<component name="libraryTable">
+  <library name="Gradle: com.scwang.smart:refresh-header-material:2.0.0-alpha-1@aar">
+    <ANNOTATIONS>
+      <root url="jar://$PROJECT_DIR$/../../AndroidStudio/gradle/gradle-5.6.4/caches/transforms-2/files-2.1/eb4572d15908e9dbd46e446e2d11ac00/jetified-refresh-header-material-2.0.0-alpha-1/annotations.zip!/" />
+    </ANNOTATIONS>
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../../AndroidStudio/gradle/gradle-5.6.4/caches/transforms-2/files-2.1/eb4572d15908e9dbd46e446e2d11ac00/jetified-refresh-header-material-2.0.0-alpha-1/jars/classes.jar!/" />
+      <root url="file://$PROJECT_DIR$/../../AndroidStudio/gradle/gradle-5.6.4/caches/transforms-2/files-2.1/eb4572d15908e9dbd46e446e2d11ac00/jetified-refresh-header-material-2.0.0-alpha-1/res" />
+      <root url="file://$PROJECT_DIR$/../../AndroidStudio/gradle/gradle-5.6.4/caches/transforms-2/files-2.1/eb4572d15908e9dbd46e446e2d11ac00/jetified-refresh-header-material-2.0.0-alpha-1/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$PROJECT_DIR$/../../AndroidStudio/gradle/gradle-5.6.4/caches/modules-2/files-2.1/com.scwang.smart/refresh-header-material/2.0.0-alpha-1/cbfbc4c7bed95b251909c6b7e23941a430451d/refresh-header-material-2.0.0-alpha-1-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$PROJECT_DIR$/../../AndroidStudio/gradle/gradle-5.6.4/caches/modules-2/files-2.1/com.scwang.smart/refresh-header-material/2.0.0-alpha-1/5f9d35eededc5b82d9679e8816bb8aa33f2d6dfa/refresh-header-material-2.0.0-alpha-1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

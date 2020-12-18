@@ -1,0 +1,15 @@
+<component name="libraryTable">
+  <library name="Gradle: com.scwang.smart:refresh-drawable-paint:2.0.0-alpha-1@aar">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../../AndroidStudio/gradle/gradle-5.6.4/caches/transforms-2/files-2.1/53a69ba7dad6ce8bb4d83cf5c82ea6ae/jetified-refresh-drawable-paint-2.0.0-alpha-1/jars/classes.jar!/" />
+      <root url="file://$PROJECT_DIR$/../../AndroidStudio/gradle/gradle-5.6.4/caches/transforms-2/files-2.1/53a69ba7dad6ce8bb4d83cf5c82ea6ae/jetified-refresh-drawable-paint-2.0.0-alpha-1/res" />
+      <root url="file://$PROJECT_DIR$/../../AndroidStudio/gradle/gradle-5.6.4/caches/transforms-2/files-2.1/53a69ba7dad6ce8bb4d83cf5c82ea6ae/jetified-refresh-drawable-paint-2.0.0-alpha-1/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$PROJECT_DIR$/../../AndroidStudio/gradle/gradle-5.6.4/caches/modules-2/files-2.1/com.scwang.smart/refresh-drawable-paint/2.0.0-alpha-1/3420777d1f45d236a74e21de227c6667f7ad0bbd/refresh-drawable-paint-2.0.0-alpha-1-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$PROJECT_DIR$/../../AndroidStudio/gradle/gradle-5.6.4/caches/modules-2/files-2.1/com.scwang.smart/refresh-drawable-paint/2.0.0-alpha-1/d89f1d90407848f495ca24e92abbd5339c07ccff/refresh-drawable-paint-2.0.0-alpha-1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

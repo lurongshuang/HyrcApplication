@@ -1,0 +1,3 @@
+include ':hyrcbase'
+include ':app'
+rootProject.name = "HyrcApplication"
