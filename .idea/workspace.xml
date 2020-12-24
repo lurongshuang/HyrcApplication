@@ -92,13 +92,13 @@
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveKotlinTopLevelDeclarationsDialog.RECENTS_KEY">
+    <key name="android.template.1231984197">
       <recent name="com.hyrc.lrs.hyrcapplication.activity.list" />
     </key>
     <key name="android.template.-282708898">
       <recent name="com.hyrc.lrs.hyrcapplication.activity" />
     </key>
-    <key name="android.template.1231984197">
+    <key name="MoveKotlinTopLevelDeclarationsDialog.RECENTS_KEY">
       <recent name="com.hyrc.lrs.hyrcapplication.activity.list" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -293,8 +293,9 @@
       </method>
     </configuration>
   </component>
-  <component name="SvnConfiguration">
-    <configuration />
+  <component name="SvnConfiguration" cleanupOnStartRun="true">
+    <configuration>C:\Users\admin2\AppData\Roaming\Subversion</configuration>
+    <supportedVersion>125</supportedVersion>
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -307,18 +308,18 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state x="690" y="274" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog" timestamp="1608197282072">
+    <state x="690" y="274" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog" timestamp="1608517699846">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="690" y="274" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1608197282072" />
-    <state x="765" y="225" key="#com.intellij.ide.util.MemberChooser" timestamp="1608262800470">
+    <state x="690" y="274" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1608517699846" />
+    <state x="765" y="225" key="#com.intellij.ide.util.MemberChooser" timestamp="1608517687880">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="765" y="225" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1608262800470" />
-    <state x="690" y="266" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1608177081892">
+    <state x="765" y="225" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1608517687880" />
+    <state x="690" y="266" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1608514411562">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="690" y="266" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1608177081892" />
+    <state x="690" y="266" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1608514411562" />
     <state x="712" y="294" key="#org.jetbrains.kotlin.idea.refactoring.move.moveDeclarations.ui.MoveKotlinTopLevelDeclarationsDialog" timestamp="1608022970672">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -331,46 +332,46 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="540" y="224" key="AndroidThemeDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1607994822361" />
-    <state width="471" height="466" key="DebuggerActiveHint" timestamp="1608263815210">
+    <state width="471" height="466" key="DebuggerActiveHint" timestamp="1608521316189">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="471" height="466" key="DebuggerActiveHint/0.0.1920.1040@0.0.1920.1040" timestamp="1608263815210" />
+    <state width="471" height="466" key="DebuggerActiveHint/0.0.1920.1040@0.0.1920.1040" timestamp="1608521316189" />
     <state x="739" y="246" key="FileChooserDialogImpl" timestamp="1608199561513">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="739" y="246" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1608199561513" />
-    <state width="1877" height="184" key="GridCell.Tab.0.bottom" timestamp="1608263907037">
+    <state width="1877" height="411" key="GridCell.Tab.0.bottom" timestamp="1608523431634">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="184" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1608263907037" />
-    <state width="1877" height="184" key="GridCell.Tab.0.center" timestamp="1608263907037">
+    <state width="1877" height="411" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1608523431634" />
+    <state width="1877" height="411" key="GridCell.Tab.0.center" timestamp="1608523431634">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="184" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1608263907037" />
-    <state width="1877" height="184" key="GridCell.Tab.0.left" timestamp="1608263907037">
+    <state width="1877" height="411" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1608523431634" />
+    <state width="1877" height="411" key="GridCell.Tab.0.left" timestamp="1608523431634">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="184" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1608263907037" />
-    <state width="1877" height="184" key="GridCell.Tab.0.right" timestamp="1608263907037">
+    <state width="1877" height="411" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1608523431634" />
+    <state width="1877" height="411" key="GridCell.Tab.0.right" timestamp="1608523431634">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="184" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1608263907037" />
-    <state width="1877" height="184" key="GridCell.Tab.1.bottom" timestamp="1608263915187">
+    <state width="1877" height="411" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1608523431634" />
+    <state width="1877" height="411" key="GridCell.Tab.1.bottom" timestamp="1608523431634">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="184" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1608263915187" />
-    <state width="1877" height="184" key="GridCell.Tab.1.center" timestamp="1608263915186">
+    <state width="1877" height="411" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1608523431634" />
+    <state width="1877" height="411" key="GridCell.Tab.1.center" timestamp="1608523431634">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="184" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1608263915186" />
-    <state width="1877" height="184" key="GridCell.Tab.1.left" timestamp="1608263915186">
+    <state width="1877" height="411" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1608523431634" />
+    <state width="1877" height="411" key="GridCell.Tab.1.left" timestamp="1608523431634">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="184" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1608263915186" />
-    <state width="1877" height="184" key="GridCell.Tab.1.right" timestamp="1608263915187">
+    <state width="1877" height="411" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1608523431634" />
+    <state width="1877" height="411" key="GridCell.Tab.1.right" timestamp="1608523431634">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="184" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1608263915187" />
+    <state width="1877" height="411" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1608523431634" />
     <state x="461" y="164" key="SettingsEditor" timestamp="1608187188127">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -392,14 +393,19 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="kotlin-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/hyrc/lrs/hyrcapplication/activity/list/ListActivity.kt</url>
-          <line>40</line>
-          <option name="timeStamp" value="11" />
+          <url>file://$PROJECT_DIR$/hyrcbase/src/main/java/com/hyrc/lrs/hyrcbase/base/BaseSearchListActivity.kt</url>
+          <line>201</line>
+          <option name="timeStamp" value="47" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="kotlin-line">
-          <url>file://$PROJECT_DIR$/hyrcbase/src/main/java/com/hyrc/lrs/hyrcbase/base/BaseSearchListActivity.kt</url>
-          <line>67</line>
-          <option name="timeStamp" value="29" />
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/hyrc/lrs/hyrcapplication/activity/search/SearchActivity.kt</url>
+          <line>49</line>
+          <option name="timeStamp" value="48" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/hyrc/lrs/hyrcapplication/activity/search/SearchActivity.kt</url>
+          <line>58</line>
+          <option name="timeStamp" value="49" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

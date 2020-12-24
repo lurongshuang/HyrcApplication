@@ -2,14 +2,14 @@ package com.hyrc.lrs.hyrcbase.base
 
 import android.content.Context
 import com.chad.library.adapter.base.BaseQuickAdapter
-import com.chad.library.adapter.base.BaseViewHolder
+import com.chad.library.adapter.base.viewholder.BaseViewHolder
 
 /**
  * @description 作用:
  * @date: 2020/12/15
  * @author:
  */
-abstract class BaseAdapter<T>
+open abstract class BaseAdapter<T>
 
 //        //设置布局
 //        setMultiTypeDelegate(new MultiTypeDelegate<BeanDate>() {

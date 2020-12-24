@@ -1,14 +1,10 @@
 package com.hyrc.lrs.hyrcapplication.activity.list.adapter
 
 import android.content.Context
-import android.widget.LinearLayout
-import androidx.constraintlayout.widget.ConstraintLayout
-import com.chad.library.adapter.base.BaseViewHolder
+import com.chad.library.adapter.base.viewholder.BaseViewHolder
 import com.hyrc.lrs.hyrcapplication.R
 import com.hyrc.lrs.hyrcapplication.activity.webView.WebViewActivity
-import com.hyrc.lrs.hyrcapplication.bean.Data
 import com.hyrc.lrs.hyrcapplication.bean.DataX
-import com.hyrc.lrs.hyrcapplication.bean.ListBean
 import com.hyrc.lrs.hyrcbase.base.BaseAdapter
 import com.xuexiang.xui.widget.alpha.XUIAlphaLinearLayout
 

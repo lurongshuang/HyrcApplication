@@ -30,11 +30,11 @@ import com.hyrc.lrs.hyrcbase.view.LoadBaseDialog
  * @author:
  */
 abstract class BaseActivity : AppCompatActivity() {
-    protected var errorView: View? = null
-    protected var loadingView: View? = null
-    protected var emptyView: View? = null
-    protected var toolBar: Toolbar? = null
-    protected var mAnimationDrawable: AnimationDrawable? = null
+    var errorView: View? = null
+    var loadingView: View? = null
+    var emptyView: View? = null
+    var toolBar: Toolbar? = null
+    var mAnimationDrawable: AnimationDrawable? = null
     var thisContentView: View? = null
     private var myBroadCast: MyBroadCast? = null
     var BId: String? = null
@@ -179,22 +179,23 @@ abstract class BaseActivity : AppCompatActivity() {
      * 显示布局
      */
     protected fun showContent() {
-        if (loadingView != null && loadingView!!.visibility != View.GONE) {
+        if (loadingView != null) {
             loadingView!!.visibility = View.GONE
         }
         // 停止动画
         if (mAnimationDrawable!!.isRunning) {
             mAnimationDrawable!!.stop()
         }
+
         if (errorView != null) {
             errorView!!.visibility = View.GONE
         }
-        if (thisContentView!!.visibility != View.VISIBLE) {
-            thisContentView!!.visibility = View.VISIBLE
-        }
         if (emptyView != null) {
             emptyView!!.visibility = View.GONE
+        }
 
+        if (thisContentView != null) {
+            thisContentView!!.visibility = View.VISIBLE
         }
     }
 
@@ -217,14 +218,15 @@ abstract class BaseActivity : AppCompatActivity() {
         if (errorView == null) {
             val viewStub = findViewById<View>(R.id.vs_error_refresh) as ViewStub
             errorView = viewStub.inflate()
-            // 点击加载失败布局
-            errorView?.setOnClickListener(View.OnClickListener {
-                showLoading()
-                onErrorRefresh()
-            })
+
         } else {
             errorView!!.visibility = View.VISIBLE
         }
+        // 点击加载失败布局
+        errorView?.setOnClickListener(View.OnClickListener {
+            showLoading()
+            onErrorRefresh()
+        })
         if (thisContentView!!.visibility != View.GONE) {
             thisContentView!!.visibility = View.GONE
         }

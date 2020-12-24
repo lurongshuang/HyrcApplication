@@ -17,7 +17,6 @@ import okhttp3.Call
  */
 abstract class BaseListActivity : BaseActivity() {
     var page = 1;
-
     var adapter: BaseAdapter<Any>? = null;
     var layoutManager: LayoutManager? = null;
     override fun onErrorRefresh() {
@@ -37,9 +36,8 @@ abstract class BaseListActivity : BaseActivity() {
     }
 
     override fun initView() {
-
         recyclerView.layoutManager = getListManager();
-        adapter = initAdapter(adapter)
+        adapter = initAdapter() as BaseAdapter<Any>;
         recyclerView.adapter = adapter
         setRefreshData()
         /**
@@ -48,7 +46,7 @@ abstract class BaseListActivity : BaseActivity() {
         refreshLayout.setOnRefreshListener { refreshLayout ->
             page = 1;
             listonRefresh(refreshLayout, recyclerView)
-            loadData(adapter!!)
+            loadData(adapter!!, page)
         }
         /**
          * 上拉加载
@@ -56,10 +54,10 @@ abstract class BaseListActivity : BaseActivity() {
         refreshLayout.setOnLoadMoreListener { refreshLayout ->
             page += 1;
             listOnLoadMore(refreshLayout, recyclerView)
-            loadData(adapter!!)
+            loadData(adapter!!, page)
         }
-
-        loadData(adapter!!)
+        initListView();
+        loadData(adapter!!, page)
 
     }
 
@@ -111,6 +109,11 @@ abstract class BaseListActivity : BaseActivity() {
         refreshLayout.finishLoadMore()
     }
 
+    protected fun finishState() {
+        finishRefresh();
+        finishLoadMore();
+    }
+
     /**
      * 无更多数据
      */
@@ -145,65 +148,20 @@ abstract class BaseListActivity : BaseActivity() {
         refreshLayout.setEnableAutoLoadMore(state)
     }
 
-
-    private fun loadData(adapter: BaseAdapter<Any>) {
-        HyrcHttpUtil.http(getMethodType(), getUrl(), getParams(), object : CallBackUtil.CallBackString() {
-            override fun onFailure(call: Call?, e: Exception?) {
-                finishRefresh()
-                finishLoadMore()
-                if (page == 1) {
-                    showError()
-                }
-                failure(call, e)
-            }
-
-            override fun onResponse(response: String) {
-                finishRefresh()
-                finishLoadMore()
-                if (page == 1) {
-                    clearData()
-                }
-                response(response);
-            }
-
-        })
-    }
-
     /**
-     * 请求地址
+     * 初始化视图
      */
-    protected abstract fun getUrl(): String
-
-    /**
-     * 请求参数
-     */
-    protected abstract fun getParams(): Map<String?, String?>?
-
-    /**
-     * 请求失败
-     */
-    protected abstract fun failure(call: Call?, e: Exception?);
-
-    /**
-     * 请求成功
-     */
-    protected abstract fun response(response: String);
-
-    /**
-     * 请求协议  post  get。。。
-     */
-    protected abstract fun getMethodType(): String;
-
+    protected abstract fun initListView()
 
     /**
      * 初始化adapter
      */
-    protected abstract fun initAdapter(adapter: BaseAdapter<Any>?): BaseAdapter<Any>
+    protected abstract fun initAdapter(): Any
 
     /**
      * 加载数据
      */
-//    protected abstract fun loadData(adapter: BaseAdapter<Any>)
+    protected abstract fun loadData(adapter: BaseAdapter<Any>, page: Int)
 
     /**
      * 下拉刷新

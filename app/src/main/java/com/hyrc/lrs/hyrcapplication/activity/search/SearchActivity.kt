@@ -1,6 +1,5 @@
 package com.hyrc.lrs.hyrcapplication.activity.search
 
-import android.util.Log
 import androidx.recyclerview.widget.RecyclerView
 import com.google.gson.Gson
 import com.hyrc.lrs.hyrcapplication.R
@@ -8,6 +7,7 @@ import com.hyrc.lrs.hyrcapplication.activity.list.adapter.List2Adapter
 import com.hyrc.lrs.hyrcapplication.bean.List2Bean
 import com.hyrc.lrs.hyrcbase.base.BaseAdapter
 import com.hyrc.lrs.hyrcbase.base.BaseSearchListActivity
+import com.hyrc.lrs.hyrcbase.utils.httpUtils.CallBackUtil
 import com.hyrc.lrs.hyrcbase.utils.httpUtils.HyrcHttpUtil
 import com.scwang.smart.refresh.layout.api.RefreshLayout
 import okhttp3.Call
@@ -27,42 +27,63 @@ class SearchActivity : BaseSearchListActivity() {
         return true
     }
 
-    override fun getUrl(): String {
-        return "https://gank.io/api/v2/search/${getSearchText()}/category/Article/type/Android/page/${page}/count/10";
-    }
-
-    override fun getParams(): Map<String?, String?>? {
-        return null;
-    }
-
-    override fun failure(call: Call?, e: Exception?) {
-
-    }
-
-    override fun response(response: String) {
-        var data = Gson().fromJson(response, List2Bean::class.javaObjectType);
-        if (data.data.isNotEmpty()) {
-            data.data.forEach {
-                adapter?.addData(it)
-                showContent();
-            }
-        } else {
-            noMoreData(true)
-        }
-    }
-
-    override fun getMethodType(): String {
-        return HyrcHttpUtil.METHOD_GET
-    }
-
-    override fun initAdapter(adapter: BaseAdapter<Any>?): BaseAdapter<Any> {
-        return List2Adapter(R.layout.list2_item, this) as BaseAdapter<Any>;
+    override fun listOnLoadMore(refreshLayout: RefreshLayout, recyclerView: RecyclerView) {
     }
 
     override fun listonRefresh(refreshLayout: RefreshLayout, recyclerView: RecyclerView) {
-
     }
 
-    override fun listOnLoadMore(refreshLayout: RefreshLayout, recyclerView: RecyclerView) {
+
+    override fun destroy() {
+    }
+
+
+    override fun initAdapter(): Any {
+        return List2Adapter(R.layout.list2_item, this);
+    }
+
+
+    /**
+     * 加载数据
+     */
+    override fun loadData(adapter: BaseAdapter<Any>?, title: String?, isNew: Boolean) {
+        var url = "https://gank.io/api/v2/search/${getSearchText()}/category/Article/type/Android/page/${page}/count/10";
+        if (isNew) {
+            page = 1;
+        }
+        if (page == 1 && adapter?.data?.size == 0) {
+            showLoading()
+        }
+        HyrcHttpUtil.httpGet(url, null, object : CallBackUtil.CallBackString() {
+            override fun onFailure(call: Call?, e: Exception?) {
+                finishState()
+                loadBaseDialog?.dismiss()
+                if (page == 1) {
+                    showError()
+                } else {
+                    showContent()
+                }
+            }
+
+            override fun onResponse(response: String) {
+                finishState()
+                if (page == 1) {
+                    clearData()
+                }
+                var data = Gson().fromJson(response, List2Bean::class.javaObjectType);
+                if (data.data.isNotEmpty()) {
+                    data.data.forEach {
+                        adapter?.addData(it)
+                        showContent();
+                    }
+                    if (data.data.isEmpty()) {
+                        noMoreData(true)
+                    }
+                } else {
+                    showEmpty("暂无数据")
+                }
+            }
+
+        })
     }
 }

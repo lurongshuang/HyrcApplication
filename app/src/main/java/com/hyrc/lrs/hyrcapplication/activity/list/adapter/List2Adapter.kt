@@ -6,7 +6,7 @@ import android.view.View
 import android.widget.ImageView
 import android.widget.LinearLayout
 import android.widget.TextView
-import com.chad.library.adapter.base.BaseViewHolder
+import com.chad.library.adapter.base.viewholder.BaseViewHolder
 import com.hyrc.lrs.hyrcapplication.R
 import com.hyrc.lrs.hyrcapplication.activity.webView.WebViewActivity
 import com.hyrc.lrs.hyrcapplication.bean.Data2

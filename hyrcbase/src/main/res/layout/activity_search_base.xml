@@ -28,10 +28,40 @@
         <com.scwang.smart.refresh.footer.ClassicsFooter
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            app:srlClassicsSpinnerStyle="Translate"
-            app:srlPrimaryColor="@color/color_page_bg"
             app:srlAccentColor="@color/colorPrimary"
+            app:srlClassicsSpinnerStyle="Translate"
             app:srlDrawableProgress="@drawable/ic_loading"
+            app:srlPrimaryColor="@color/color_page_bg"
             app:srlTextSizeTitle="@dimen/sp_14" />
     </com.scwang.smart.refresh.layout.SmartRefreshLayout>
+
+    <!--加载失败-->
+    <ViewStub
+        android:layout_gravity="center_horizontal"
+        android:visibility="gone"
+        android:id="@+id/vs_error_refresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout="@layout/layout_loading_error" />
+
+    <!--加载中..-->
+    <ViewStub
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/vs_loading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout="@layout/layout_loading_view"
+        android:visibility="gone" />
+
+    <!--数据为空-->
+    <ViewStub
+        android:layout_gravity="center_horizontal"
+        android:visibility="gone"
+        android:id="@+id/vs_empty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout="@layout/layout_loading_empty" />
 </LinearLayout>

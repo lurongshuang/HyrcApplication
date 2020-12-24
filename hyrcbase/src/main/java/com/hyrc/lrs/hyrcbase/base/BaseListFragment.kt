@@ -28,7 +28,7 @@ abstract class BaseListFragment : BaseFragment() {
         val layoutManager = LinearLayoutManager(activity)
         layoutManager.orientation = LinearLayoutManager.VERTICAL
         recyclerView.layoutManager = layoutManager
-        adapter = initAdapter(adapter)
+        adapter = initAdapter() as BaseAdapter<Any>;
         recyclerView.adapter = adapter
         setRefreshData()
 
@@ -38,8 +38,7 @@ abstract class BaseListFragment : BaseFragment() {
         refreshLayout.setOnRefreshListener { refreshLayout ->
             page = 1;
             listonRefresh(refreshLayout, recyclerView)
-//            clearData()
-            loadData(adapter)
+            loadData(adapter!!, page)
         }
         /**
          * 上拉加载
@@ -47,7 +46,7 @@ abstract class BaseListFragment : BaseFragment() {
         refreshLayout.setOnLoadMoreListener { refreshLayout ->
             page += 1;
             listOnLoadMore(refreshLayout, recyclerView)
-            loadData(adapter)
+            loadData(adapter!!, page)
         }
 
     }
@@ -119,64 +118,15 @@ abstract class BaseListFragment : BaseFragment() {
     }
 
 
-    fun loadData(adapter: BaseAdapter<Any>?) {
-        HyrcHttpUtil.http(getMethodType(), getUrl(), getParams(), object : CallBackUtil.CallBackString() {
-            override fun onFailure(call: Call?, e: Exception?) {
-                finishRefresh()
-                finishLoadMore()
-                if (page == 1) {
-                    showError()
-                }
-                failure(call, e)
-            }
-
-            override fun onResponse(response: String) {
-                finishRefresh()
-                finishLoadMore()
-                if (page == 1) {
-                    clearData()
-                }
-                response(response);
-            }
-
-        })
-    }
-
-    /**
-     * 请求地址
-     */
-    protected abstract fun getUrl(): String
-
-    /**
-     * 请求参数
-     */
-    protected abstract fun getParams(): Map<String?, String?>?
-
-    /**
-     * 请求失败
-     */
-    protected abstract fun failure(call: Call?, e: Exception?);
-
-    /**
-     * 请求成功
-     */
-    protected abstract fun response(response: String);
-
-    /**
-     * 请求协议  post  get。。。
-     */
-    protected abstract fun getMethodType(): String;
-
-
     /**
      * 初始化adapter
      */
-    protected abstract fun initAdapter(adapter: BaseAdapter<Any>?): BaseAdapter<Any>
+    protected abstract fun initAdapter(): Any
 
     /**
      * 加载数据
      */
-//    protected abstract fun loadData(adapter: BaseAdapter<Any>)
+    protected abstract fun loadData(adapter: BaseAdapter<Any>, page: Int)
 
     /**
      * 下拉刷新

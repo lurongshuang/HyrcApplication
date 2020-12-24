@@ -1,7 +1,8 @@
 package com.hyrc.lrs.hyrcapplication.activity.list.adapter
 
 import android.content.Context
-import com.chad.library.adapter.base.BaseViewHolder
+import android.util.Log
+import com.chad.library.adapter.base.viewholder.BaseViewHolder
 import com.hyrc.lrs.hyrcapplication.R
 import com.hyrc.lrs.hyrcapplication.bean.DataImg
 import com.hyrc.lrs.hyrcbase.base.BaseAdapter
@@ -16,7 +17,7 @@ import com.hyrc.lrs.hyrcbase.utils.glide.GlideUtil
 class ImgAdapter(layoutResId: Int, activityContext: Context) : BaseAdapter<DataImg>(layoutResId, activityContext) {
 
     override fun itemInit(helper: BaseViewHolder?, type: Int, item: DataImg) {
-        GlideUtil.displayRandom(1, item.thumbURL, helper?.getView(R.id.iv_welfare))
+//        GlideUtil.displayRandom(1, item.images[0], helper?.getView(R.id.iv_welfare))
     }
 
 }
